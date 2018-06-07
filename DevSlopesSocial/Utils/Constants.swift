@@ -1,0 +1,11 @@
+//
+//  Constants.swift
+//  DevSlopesSocial
+//
+//  Created by Stevan Medic on 6/7/18.
+//  Copyright © 2018 Stevan Medic. All rights reserved.
+//
+
+import UIKit
+
+let SHADOW_GRAY : CGFloat = 120.0 / 255.0
