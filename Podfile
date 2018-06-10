@@ -9,6 +9,8 @@ target 'DevSlopesSocial' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
 
   target 'DevSlopesSocialTests' do
     inherit! :search_paths

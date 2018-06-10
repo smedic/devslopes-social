@@ -69,6 +69,9 @@
                                     <constraint firstAttribute="height" constant="130" id="8nc-Kb-nN3"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="f"/>
+                                <connections>
+                                    <action selector="fbButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t0F-Z6-mcq"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhs-zi-sYn" customClass="FancyField" customModule="DevSlopesSocial" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="388" width="250" height="35"/>
