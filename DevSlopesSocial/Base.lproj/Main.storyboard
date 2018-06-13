@@ -104,6 +104,9 @@
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t2H-ru-kju"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -127,24 +130,50 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="lhs-zi-sYn" id="4sE-oh-B76"/>
+                        <outlet property="passwordField" destination="n9b-zX-OgG" id="wWd-q2-SHD"/>
+                        <segue destination="p5j-kx-8sK" kind="show" identifier="goToFeed" id="iVf-gv-78v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="W1M-Eb-k6u">
+        <!--FeedVC-->
+        <scene sceneID="d14-69-IiE">
             <objects>
-                <viewController id="pGR-TE-hgB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SYl-lg-shS">
+                <viewController id="p5j-kx-8sK" customClass="FeedVC" customModule="DevSlopesSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZDA-AE-ghR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="DEo-8w-YXV"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3u-AC-PCL">
+                                <rect key="frame" x="159" y="318" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="O2z-FC-Ryg"/>
+                                    <constraint firstAttribute="height" constant="30" id="vdJ-Jg-h8u"/>
+                                </constraints>
+                                <state key="normal" title="Sign out"/>
+                                <connections>
+                                    <action selector="signOutClicked:" destination="p5j-kx-8sK" eventType="touchUpInside" id="Km9-6n-bC1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47118713245882327" green="0.73056150939163356" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r3u-AC-PCL" firstAttribute="centerY" secondItem="ZDA-AE-ghR" secondAttribute="centerY" id="4Ze-0k-ebw"/>
+                            <constraint firstItem="r3u-AC-PCL" firstAttribute="centerX" secondItem="ZDA-AE-ghR" secondAttribute="centerX" id="NmB-gq-D9Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f3d-1A-yLw"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignInScreen" id="d3g-qJ-J6p"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3CY-l7-B9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjU-x1-o4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="889" y="34"/>
         </scene>
     </scenes>
     <resources>

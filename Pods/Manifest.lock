@@ -52,6 +52,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
   - FacebookCore
@@ -59,6 +60,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Storage
+  - SwiftKeychainWrapper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -76,6 +78,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - nanopb
+    - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
@@ -92,7 +95,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: c74d0ef8afd2a12816f24caa2892dbbcc10774fb
+PODFILE CHECKSUM: a12265249d472a098e670a930e56900217f9a728
 
 COCOAPODS: 1.5.3
