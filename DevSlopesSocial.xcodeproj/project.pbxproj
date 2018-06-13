@@ -12,6 +12,7 @@
 		865D1DEC20CDB568000BA07B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865D1DEB20CDB568000BA07B /* FBSDKLoginKit.framework */; };
 		865D1DEE20CDB573000BA07B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865D1DED20CDB573000BA07B /* FBSDKCoreKit.framework */; };
 		865D1DF320D172C1000BA07B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D1DF220D172C1000BA07B /* FeedVC.swift */; };
+		865D1DF520D1D645000BA07B /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D1DF420D1D645000BA07B /* CircleView.swift */; };
 		86EF1E7820C96D45008D346E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF1E7720C96D45008D346E /* AppDelegate.swift */; };
 		86EF1E7A20C96D45008D346E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF1E7920C96D45008D346E /* SignInVC.swift */; };
 		86EF1E7D20C96D45008D346E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EF1E7B20C96D45008D346E /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		865D1DEF20CDBAAD000BA07B /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		865D1DF120CDD786000BA07B /* DevSlopesSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DevSlopesSocial.entitlements; sourceTree = "<group>"; };
 		865D1DF220D172C1000BA07B /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		865D1DF420D1D645000BA07B /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		86EF1E7420C96D45008D346E /* DevSlopesSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevSlopesSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EF1E7720C96D45008D346E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86EF1E7920C96D45008D346E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				86EF1EA120C9E472008D346E /* RoundButton.swift */,
 				86EF1EA320C9E64B008D346E /* FancyField.swift */,
 				86EF1EA520C9E824008D346E /* FancyButton.swift */,
+				865D1DF420D1D645000BA07B /* CircleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865D1DF520D1D645000BA07B /* CircleView.swift in Sources */,
 				86EF1EA420C9E64B008D346E /* FancyField.swift in Sources */,
 				865D1DF320D172C1000BA07B /* FeedVC.swift in Sources */,
 				86EF1E7A20C96D45008D346E /* SignInVC.swift in Sources */,
