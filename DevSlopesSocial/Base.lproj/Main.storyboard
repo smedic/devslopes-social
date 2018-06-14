@@ -151,11 +151,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chz-XI-Jbm" customClass="FancyView" customModule="DevSlopesSocial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="eki-9c-UVa">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="eki-9c-UVa">
                                         <rect key="frame" x="16" y="22" width="39" height="35"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="39" id="fYg-Nm-1YZ"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="GJF-KF-kg8" appends="YES" id="SZX-EU-m9N"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6A-Op-NgB">
                                         <rect key="frame" x="157" y="29" width="61" height="21"/>
@@ -351,6 +355,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjU-x1-o4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GJF-KF-kg8">
+                    <connections>
+                        <action selector="signOutClicked:" destination="p5j-kx-8sK" id="ZzB-va-UMi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="33.733133433283363"/>
         </scene>

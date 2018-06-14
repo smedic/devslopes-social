@@ -14,6 +14,7 @@
 		865D1DF320D172C1000BA07B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D1DF220D172C1000BA07B /* FeedVC.swift */; };
 		865D1DF520D1D645000BA07B /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D1DF420D1D645000BA07B /* CircleView.swift */; };
 		865D1DF720D1E1EC000BA07B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D1DF620D1E1EC000BA07B /* PostCell.swift */; };
+		865D1DFA20D32C5C000BA07B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D1DF920D32C5C000BA07B /* DataService.swift */; };
 		86EF1E7820C96D45008D346E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF1E7720C96D45008D346E /* AppDelegate.swift */; };
 		86EF1E7A20C96D45008D346E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF1E7920C96D45008D346E /* SignInVC.swift */; };
 		86EF1E7D20C96D45008D346E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EF1E7B20C96D45008D346E /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		865D1DF220D172C1000BA07B /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		865D1DF420D1D645000BA07B /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		865D1DF620D1E1EC000BA07B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		865D1DF920D32C5C000BA07B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		86EF1E7420C96D45008D346E /* DevSlopesSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevSlopesSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EF1E7720C96D45008D346E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86EF1E7920C96D45008D346E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		865D1DF820D32C30000BA07B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				865D1DF920D32C5C000BA07B /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		86EF1E6B20C96D45008D346E = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +125,7 @@
 		86EF1E7620C96D45008D346E /* DevSlopesSocial */ = {
 			isa = PBXGroup;
 			children = (
-				865D1DF120CDD786000BA07B /* DevSlopesSocial.entitlements */,
+				865D1DF820D32C30000BA07B /* Services */,
 				86EF1E9E20C9E0E0008D346E /* Utils */,
 				86EF1E9920C98932008D346E /* Model */,
 				86EF1E9A20C98935008D346E /* View */,
@@ -126,6 +136,7 @@
 				86EF1E8020C96D46008D346E /* LaunchScreen.storyboard */,
 				86EF1E8320C96D46008D346E /* Info.plist */,
 				86EF1E9720C96E29008D346E /* GoogleService-Info.plist */,
+				865D1DF120CDD786000BA07B /* DevSlopesSocial.entitlements */,
 			);
 			path = DevSlopesSocial;
 			sourceTree = "<group>";
@@ -320,6 +331,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -332,6 +344,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +400,7 @@
 				865D1DF320D172C1000BA07B /* FeedVC.swift in Sources */,
 				86EF1E7A20C96D45008D346E /* SignInVC.swift in Sources */,
 				86EF1EA220C9E472008D346E /* RoundButton.swift in Sources */,
+				865D1DFA20D32C5C000BA07B /* DataService.swift in Sources */,
 				86EF1EA620C9E824008D346E /* FancyButton.swift in Sources */,
 				86EF1E7820C96D45008D346E /* AppDelegate.swift in Sources */,
 				86EF1E9D20C9E080008D346E /* FancyView.swift in Sources */,
